@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{04735107-3ecb-4bb0-986f-ab19fcf6073a}</ItemsProjectGuid>
+    <ItemsProjectName>Game-Shared</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\AddScoreEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\GameStateChangeEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\SoundEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Asteroid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\DebrisObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\FollowCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\DebrisSpawner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Lamp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\LaserRayObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\LightCasters.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\OrthoCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Planetoid.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\RingSpawner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\SceneRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\ScoreDisplay.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\SpaceBodySpawner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\SpaceRing.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\UIObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\UISliderObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\ResourceFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\AudioController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\SceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\TweenFuncs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\TweenManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\TweenObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\FBO.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Physics3D\BulletDebugDraw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Physics3D\BulletManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\GameEventTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Events\RemoveFromSceneEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameCamera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\GamePCH.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ImGuiManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\ResourceManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\AudioOptionsScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\GameOverScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\HUDScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\MenuScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\OptionScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\PauseScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\RenderScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\Scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Game\ObjectPool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Helpers\cJSONHelpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Material.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\OBJLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\Texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Mesh\VertexFormat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Physics3D\BulletMotionState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\LightingScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\Scenes\SplashScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\XAudio2\SoundChannel.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\XAudio2\SoundObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\XAudio2\SoundPlayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\XAudio2\VoiceCallback.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Source\XAudio2\WaveLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Asteroid.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\DebrisObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\DebrisSpawner.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\FollowCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Lamp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\LaserRayObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\OrthoCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Planetoid.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\RingSpawner.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\SceneRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\ScoreDisplay.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\SpaceBodySpawner.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\SpaceRing.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\UIObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\UISliderObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\ResourceFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\AudioController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\SceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\TweenFuncs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\TweenManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\TweenObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\FBO.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Physics3D\BulletDebugDraw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Physics3D\BulletManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameCamera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\GameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\Player.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GameObjects\PlayerController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\GamePCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Game\ImGuiManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\ResourceManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\AudioOptionsScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\GameOverScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\HUDScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\MenuScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\OptionScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\PauseScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\RenderScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\Scene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Helpers\cJSONHelpers.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Material.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Mesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\MeshShapes.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\OBJLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Mesh\Texture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Physics3D\BulletMotionState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\LightingScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\Scenes\SplashScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\XAudio2\SoundChannel.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\XAudio2\SoundObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\XAudio2\SoundPlayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\XAudio2\VoiceCallback.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Source\XAudio2\WaveLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Data\SceneFloatingStuff\Water.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\SceneFloatingStuff\Water.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\SceneRipple\Ripple.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\SceneRipple\Ripple.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\CubeMap.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\CubeMap.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\DebugDraw.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\DebugDraw.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\LampShader.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\LampShader.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Main.frag">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Main.vert">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\ParticleShader.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\ParticleShader.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\PostRender.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\PostRender.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Texture.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Texture.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water.vert" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water2.frag" />
+    <None Include="$(MSBuildThisFileDirectory)Data\Shaders\Water2.vert" />
+  </ItemGroup>
+</Project>

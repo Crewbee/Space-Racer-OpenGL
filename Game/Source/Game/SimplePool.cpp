@@ -1,0 +1,55 @@
+#pragma once
+template <class MyType> class PooledObject
+{
+protected:
+    SimplePool<MyType>* m_pPool;
+
+public:
+    PooledObject(SimplePool<MyType>* pPool);
+    virtual ~PooledObject();
+
+    void SetPool(SimplePool<MyType>* pPool) { m_pPool = pPool; }
+    void Destroy();
+};
+
+template <class MyType> class SimplePool
+{
+protected:
+    std::vector<MyType> m_InactiveObjects;
+
+public:
+    SimplePool()
+    {
+    }
+
+    virtual ~SimplePool()
+    {
+        while( m_InactiveObjects.empty() == false )
+        {
+            delete m_InactiveObjects.back();
+            m_InactiveObjects.pop_back();
+        }
+    }
+
+    void AddNewObjectToPool(MyType object)
+    {
+        m_InactiveObjects.push_back( object );
+    }
+
+    MyType GetObjectFromPool()
+    {
+        if( m_InactiveObjects.size() == 0 )
+            return 0;
+
+        MyType pObject = m_InactiveObjects.back();
+        if( pObject != 0 )
+            m_InactiveObjects.pop_back();
+        return pObject;
+    }
+
+    void ReturnObject(MyType object)
+    {
+        m_InactiveObjects.push_back( object );
+    }
+};
+
